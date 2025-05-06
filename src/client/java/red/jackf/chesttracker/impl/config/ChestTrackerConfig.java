@@ -100,6 +100,9 @@ public class ChestTrackerConfig {
     public static class Rendering {
         @SerialEntry(comment = "Name Render Range. Range: [4, 24] blocks")
         public int nameRange = 12;
+    public static class Rendering {
+        @SerialEntry(comment = "Name Render Height. Range: [-5, 5] blocks")
+        public int nameHeight = 10;
     }
 
     public static class Debug {
