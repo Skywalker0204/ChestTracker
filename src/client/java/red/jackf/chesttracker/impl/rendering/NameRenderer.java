@@ -53,7 +53,7 @@ public class NameRenderer {
                 if (entry.getKey().distToCenterSqr(context.camera().getPosition()) < maxRangeSq) {
                     Component name = entry.getValue().renderName();
                     if (name == null) continue;
-                    RenderUtils.scheduleLabelRender(entry.getValue().getCenterPosition().add(0, 1, 0), entry.getValue().renderName());
+                    RenderUtils.scheduleLabelRender(entry.getValue().getCenterPosition().add(ChestTrackerConfig.INSTANCE.instance().rendering.nameOffset_x, ChestTrackerConfig.INSTANCE.instance().rendering.nameHeight, ChestTrackerConfig.INSTANCE.instance().rendering.nameOffset_z), entry.getValue().renderName());
                 }
             }
         }
