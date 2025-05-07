@@ -101,7 +101,11 @@ public class ChestTrackerConfig {
         @SerialEntry(comment = "Name Render Range. Range: [4, 24] blocks")
         public int nameRange = 12;
         @SerialEntry(comment = "Name Render height Range: [-5, 5] blocks")
-        public int nameRange = 1;
+        public int nameHeight = 1;
+        @SerialEntry(comment = "Name Render offset x Range: [-5, 5] blocks")
+        public int nameOffset_x = 0;
+        @SerialEntry(comment = "Name Render offset z Range: [-5, 5] blocks")
+        public int nameOffset_z = 0;
     }
 
     public static class Debug {
