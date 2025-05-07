@@ -4,6 +4,8 @@
 ![CurseForge Downloads](https://img.shields.io/curseforge/dt/397217?style=flat-square&label=CurseForge&color=%23E04E14)
 [![Crowdin](https://badges.crowdin.net/chest-tracker/localized.svg)](https://crowdin.com/project/chest-tracker)
 
+Adds a config for offseting the name of the chests.
+
 An client-sided mod to remember where you've put items. Press **Y** to search for items, and the
 **GRAVE** key ``` ` ``` to open the GUI.
 
