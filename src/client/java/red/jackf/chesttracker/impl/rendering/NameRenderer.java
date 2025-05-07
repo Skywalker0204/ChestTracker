@@ -53,7 +53,7 @@ public class NameRenderer {
                 if (entry.getKey().distToCenterSqr(context.camera().getPosition()) < maxRangeSq) {
                     Component name = entry.getValue().renderName();
                     if (name == null) continue;
-                    RenderUtils.scheduleLabelRender(entry.getValue().getCenterPosition().add(ChestTrackerConfig.INSTANCE.instance().rendering.nameOffset_x, ChestTrackerConfig.INSTANCE.instance().rendering.nameHeight, ChestTrackerConfig.INSTANCE.instance().rendering.nameOffset_z), entry.getValue().renderName());
+                    RenderUtils.scheduleLabelRender(entry.getValue().getCenterPosition().add(ChestTrackerConfig.INSTANCE.instance().rendering.Offset_x, ChestTrackerConfig.INSTANCE.instance().rendering.Height, ChestTrackerConfig.INSTANCE.instance().rendering.Offset_z), entry.getValue().renderName());
                 }
             }
         }
@@ -61,7 +61,7 @@ public class NameRenderer {
         if (focused != null) {
             Component name = focused.renderName();
             if (name != null) {
-                RenderUtils.scheduleLabelRender(focused.getCenterPosition().add(0, 1, 0), name, true);
+                RenderUtils.scheduleLabelRender(focused.getCenterPosition().add(ChestTrackerConfig.INSTANCE.instance().rendering.Offset_x, ChestTrackerConfig.INSTANCE.instance().rendering.Height, ChestTrackerConfig.INSTANCE.instance().rendering.Offset_z), name, true);
             }
         }
     }
